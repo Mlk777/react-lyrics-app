@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fe2edfdfd680cb88895b3ac9cf529bfe",
+    "revision": "979aff16eaf5865cba5c7af4f1f6660b",
     "url": "/react-lyrics-app/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-lyrics-app/static/js/2.dedbab28.chunk.js"
   },
   {
-    "revision": "75a1b17d49b1d11c16e1",
-    "url": "/react-lyrics-app/static/js/main.267333a2.chunk.js"
+    "revision": "755df0bcf04efdcabee6",
+    "url": "/react-lyrics-app/static/js/main.9d50baa2.chunk.js"
   },
   {
     "revision": "64f4a2edff60c541e441",
