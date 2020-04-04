@@ -1,60 +1,51 @@
 import React, { useState, useContext } from 'react';
-import { AppProvider, AppContext } from '../../context';
+import { AppContext } from '../../context';
 
 const Search = () => {
-  const [trackTitle, setTrackTitle] = useState('');
+  const [search, setSearch] = useState('');
   const buttonRef = React.createRef();
   const { searchLyrics } = useContext(AppContext);
 
   const onChange = e => {
-    setTrackTitle(e.target.value);
+    setSearch(e.target.value);
   };
 
   const onFocus = e => {
-    if (e.target.value !== '') setTrackTitle('');
+    if (e.target.value !== '') setSearch('');
   };
 
   const onKeyPress = e => {
-    if (e.key === 'Enter') {
-      buttonRef.current.focus();
-    }
+    if (e.key === 'Enter') buttonRef.current.focus();
   };
 
   const onFindTrack = e => {
     e.preventDefault();
-    searchLyrics(trackTitle);
+    searchLyrics(search);
   };
 
   return (
-    <AppProvider>
-      <div className='card card-body mb-4 p-4'>
-        <h1 className='display-4 text-center'>
-          <i className='fas fa-music' /> Search For A Song
-        </h1>
-        <p className='lead text-center'>Get the lyrics for any song</p>
-        <form onSubmit={onFindTrack}>
-          <div className='form-group'>
-            <input
-              type='text'
-              className='form-control form-control-lg'
-              placeholder='Song Title...'
-              name='trackTitle'
-              value={trackTitle}
-              onChange={onChange}
-              onFocus={onFocus}
-              onKeyPress={onKeyPress}
-            />
-          </div>
-          <button
-            ref={buttonRef}
-            className='btn btn-primary btn-lg btn-block mb-5'
-            type='submit'
-          >
-            Get Tracks Lyrics
-          </button>
-        </form>
-      </div>
-    </AppProvider>
+    <div className='w-full flex justify-center mb-12 md:mb-16'>
+      <form className='flex w-8/12 md:w-5/12' onSubmit={onFindTrack}>
+        <input
+          type='text'
+          placeholder='Search...'
+          name='search'
+          className='w-full border border-gray-500 p-2 text-xl rounded-tl-md rounded-bl-md outline-none'
+          value={search}
+          onChange={onChange}
+          onFocus={onFocus}
+          onKeyPress={onKeyPress}
+          required
+        />
+        <button
+          ref={buttonRef}
+          className='border border-l-0 border-gray-500 rounded-tr-md rounded-br-md'
+          style={{ outline: '0' }}
+        >
+          <i className='fa fa-search fa-lg p-2'></i>
+        </button>
+      </form>
+    </div>
   );
 };
 
