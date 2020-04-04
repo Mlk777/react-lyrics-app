@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.js": "/react-lyrics-app/static/js/main.e66c817e.chunk.js",
-    "main.js.map": "/react-lyrics-app/static/js/main.e66c817e.chunk.js.map",
-    "runtime~main.js": "/react-lyrics-app/static/js/runtime~main.caa7a38d.js",
-    "runtime~main.js.map": "/react-lyrics-app/static/js/runtime~main.caa7a38d.js.map",
-    "static/js/2.dedbab28.chunk.js": "/react-lyrics-app/static/js/2.dedbab28.chunk.js",
-    "static/js/2.dedbab28.chunk.js.map": "/react-lyrics-app/static/js/2.dedbab28.chunk.js.map",
+    "main.css": "/react-lyrics-app/static/css/main.58c2da8e.chunk.css",
+    "main.js": "/react-lyrics-app/static/js/main.19358dd3.chunk.js",
+    "main.js.map": "/react-lyrics-app/static/js/main.19358dd3.chunk.js.map",
+    "runtime~main.js": "/react-lyrics-app/static/js/runtime~main.55039719.js",
+    "runtime~main.js.map": "/react-lyrics-app/static/js/runtime~main.55039719.js.map",
+    "static/js/2.64836367.chunk.js": "/react-lyrics-app/static/js/2.64836367.chunk.js",
+    "static/js/2.64836367.chunk.js.map": "/react-lyrics-app/static/js/2.64836367.chunk.js.map",
     "index.html": "/react-lyrics-app/index.html",
-    "precache-manifest.c15374caefd962eb0dc4cedc1416c6a6.js": "/react-lyrics-app/precache-manifest.c15374caefd962eb0dc4cedc1416c6a6.js",
-    "service-worker.js": "/react-lyrics-app/service-worker.js"
+    "precache-manifest.6c2fe321b7929d2b4677595ad014944c.js": "/react-lyrics-app/precache-manifest.6c2fe321b7929d2b4677595ad014944c.js",
+    "service-worker.js": "/react-lyrics-app/service-worker.js",
+    "static/css/main.58c2da8e.chunk.css.map": "/react-lyrics-app/static/css/main.58c2da8e.chunk.css.map"
   }
 }
